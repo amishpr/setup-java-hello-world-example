@@ -13,5 +13,5 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Find all *.java files and compile them
+    - name: Find all *.java files and then compile them
       run: cd src && find -name "*.java" > java_files.txt && javac @java_files.txt && ls
